@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -9,15 +9,17 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>Home - MyBlogger</title>
+    <title>Blog Home - MyBlogger</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/blog-home.css" rel="stylesheet">
 
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -46,23 +48,20 @@
                         <a th:href="@{/}">Home</a>
                     </li>
                     <li>
-                        <a th:href="@{posts}">Posts</a>
+                        <a th:href="@{/}">Posts</a>
                     </li>
                     <li>
-                        <a th:href="@{posts/create}">Add Post</a>
+                        <a th:href="@{/}">Create Post</a>
                     </li>
                     <li>
-                        <a th:href="@{users}">Users</a>
+                        <a th:href="@{/}">Register</a>
                     </li>
                     <li>
-                        <a th:href="@{users/register}">Register</a>
+                        <a th:href="@{/}">Login</a>
                     </li>
                     <li>
-                        <a th:href="@{users/login}">Login</a>
-                    </li>
-                    <li>
-                        <form method="post" th:action="@{users/logout}" class="nav navbar-form input-group">
-                        <input type="submit" value="logout" class="button"/>
+                        <form>
+                            <input type="submit" value="Logout" class="nav navbar-form">
                         </form>
                     </li>
                 </ul>
@@ -110,7 +109,7 @@
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
                 <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <img class="img-responsive" src="http://placehold.it/900x300" alt=""/>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -213,7 +212,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; MyBlogger 2018</p>
+                    <p>Copyright &copy; Your Website 2014</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
